@@ -1,0 +1,2 @@
+# mongoq
+Build MongoDB queries ⚙️
