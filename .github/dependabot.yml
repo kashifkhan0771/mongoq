@@ -1,0 +1,7 @@
+version: 2
+updates:
+  # Manage Go module dependencies
+  - package-ecosystem: "gomod"
+    directory: "/"
+    schedule:
+      interval: "weekly" # Update dependencies once per week
