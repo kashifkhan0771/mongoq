@@ -1,6 +1,10 @@
 package mongoq
 
-import "go.mongodb.org/mongo-driver/bson"
+import (
+	"errors"
+
+	"go.mongodb.org/mongo-driver/bson"
+)
 
 // Operator represents filter operations.
 type Operator int
@@ -33,9 +37,6 @@ func newFilter(key string, value interface{}, op ...Operator) (Filter, error) {
 
 	f := Filter{Key: key, Value: value, Op: Equal}
 	if len(op) > 0 {
-		if !op[0].IsValid() {
-			return Filter{}, fmt.Errorf("invalid operator: %v", op[0])
-		}
 		f.Op = op[0]
 	}
 

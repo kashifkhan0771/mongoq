@@ -16,6 +16,13 @@ func NewQuery() *Query {
 }
 
 // AddFilter adds a filter to the query.
-func (q *Query) AddFilter(key string, value interface{}, op Operator) {
-	q.Filters[key] = newFilter(key, value, op)
+func (q *Query) AddFilter(key string, value interface{}, op Operator) error {
+	filter, err := newFilter(key, value, op)
+	if err != nil {
+		return err
+	}
+
+	q.Filters[key] = filter
+
+	return nil
 }
