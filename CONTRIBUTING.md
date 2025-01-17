@@ -8,13 +8,16 @@ If you find a bug that you'd like to fix, or a new feature that you'd like to im
 
 
 Fork the Repository:
-1. Visit https://github.com/kashifkhan0771/mongoq
+1. Visit [mongoq repository](https://github.com/kashifkhan0771/mongoq)
 2. Click the "Fork" button to create your own fork
 3. Clone your fork locally:
 
+    # Using SSH (recommended)
     git clone git@github.com:<your-username>/mongoq.git
-    cd mongoq
+    # Or using HTTPS
+    git clone https://github.com/<your-username>/mongoq.git
 
+    cd mongoq
 Make a branch to add your new feature
 
     git checkout -b my-new-feature main
