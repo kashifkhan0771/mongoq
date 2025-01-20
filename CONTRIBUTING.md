@@ -1,39 +1,65 @@
 # Contributing to mongoq
 
-This is a short guide on how to contribute to the project.
+Thank you for your interest in contributing to **mongoq**! Whether it's a bug fix, feature request, or a code improvement, we appreciate your effort to make this project better.  
 
-## Submitting a pull request
+## How You Can Contribute
 
-If you find a bug that you'd like to fix, or a new feature that you'd like to implement then please submit a pull request via GitHub.
+### 🐛 Report Issues or Request Features
+Found a bug or have a great idea for a feature?  
+1. Head over to the [Issues tab](https://github.com/kashifkhan0771/mongoq/issues).  
+2. Open a new issue with a clear and concise description of the problem or suggestion.  
+   - For feature requests, describe the use case and how it adds value to the library.  
+   - For bug reports, include steps to reproduce, expected behavior, and observed behavior.  
+3. Label your issue appropriately to help us prioritize.  
 
+### 💡 Submit a Pull Request (PR)
+If you want to fix a bug, implement a new feature, or improve the documentation:  
 
-Fork the Repository:
-1. Visit [mongoq repository](https://github.com/kashifkhan0771/mongoq)
-2. Click the "Fork" button to create your own fork
-3. Clone your fork locally:
+1. **Fork the Repository**  
+   - Visit [mongoq repository](https://github.com/kashifkhan0771/mongoq).  
+   - Click the **"Fork"** button to create a copy in your GitHub account.  
+   - Clone your fork locally:  
+     ```bash
+     # Using SSH (recommended)
+     git clone git@github.com:<your-username>/mongoq.git
+     # Or using HTTPS
+     git clone https://github.com/<your-username>/mongoq.git
+     cd mongoq
+     ```  
 
-    # Using SSH (recommended)
-    git clone git@github.com:<your-username>/mongoq.git
-    # Or using HTTPS
-    git clone https://github.com/<your-username>/mongoq.git
+2. **Create a Branch**  
+   Always work in a new branch for your changes:  
+   ```bash
+   git checkout -b my-new-feature
+   ```  
 
-    cd mongoq
-Make a branch to add your new feature
+3. **Implement Changes**  
+   - Write clear and concise code.  
+   - Add or update **unit tests** for your changes.  
+   - Update documentation if applicable.  
 
-    git checkout -b my-new-feature main
+4. **Rebase Your Changes**  
+   Sync your branch with the latest `main` branch:  
+   ```bash
+   git pull --rebase origin main
+   ```  
 
-And get hacking.
+5. **Push and Submit Your PR**  
+   Push your branch to your fork and submit a pull request to the main repository:  
+   ```bash
+   git push origin my-new-feature
+   ```  
+   - Go to your forked repository on GitHub and click **"New Pull Request"**.  
+   - Ensure your PR has a clear title and detailed description.  
 
-Make sure you
+### 📋 Guidelines for a Great Contribution
+- Follow the code style used in the repository.  
+- Write descriptive commit messages.  
+- Ensure all tests pass before submitting.  
+- Be responsive to review feedback.  
 
-* Add documentation for a new feature
-* Add unit tests for a new feature
-* rebase to develop `git rebase main`
+## ❤️ We Value Your Contributions
+Whether you’re fixing a typo or proposing a major feature, your contributions make a difference. Don’t hesitate to start a discussion by opening an issue or joining the ongoing conversations.  
 
-When you are done with that
-
-    git push origin my-new-feature
-
-Your patch will get reviewed, and you might get asked to fix some stuff.
-
-If so, then make the changes in the same branch, squash the commits, rebase it to develop then push it to GitHub with `--force`.
+Thank you for helping to improve **mongoq**! 🚀
+```
