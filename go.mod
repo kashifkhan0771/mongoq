@@ -2,7 +2,7 @@ module github.com/kashifkhan0771/mongoq
 
 go 1.25
 
-require go.mongodb.org/mongo-driver v1.17.7
+require go.mongodb.org/mongo-driver v1.17.9
 
 require (
 	github.com/golang/snappy v0.0.4 // indirect
